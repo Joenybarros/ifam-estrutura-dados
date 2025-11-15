@@ -1,0 +1,108 @@
+
+Configura‡Æo de IP do Windows
+
+   Nome do host. . . . . . . . . . . . . . . . : lab2
+   Sufixo DNS prim rio . . . . . . . . . . . . : 
+   Tipo de n¢. . . . . . . . . . . . . . . . . : h¡brido
+   Roteamento de IP ativado. . . . . . . . . . : nÆo
+   Proxy WINS ativado. . . . . . . . . . . . . : nÆo
+
+Adaptador Ethernet Ethernet:
+
+   Sufixo DNS espec¡fico de conexÆo. . . . . . : 
+   Descri‡Æo . . . . . . . . . . . . . . . . . : Realtek PCIe GbE Family Controller
+   Endere‡o F¡sico . . . . . . . . . . . . . . : D0-94-66-B9-6E-BD
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configura‡Æo Autom tica Habilitada. . . . . : Sim
+   Endere‡o IPv6 de link local . . . . . . . . : fe80::6d68:3618:47ca:bf80%3(Preferencial) 
+   Endere‡o IPv4. . . . . . . .  . . . . . . . : 192.168.0.121(Preferencial) 
+   M scara de Sub-rede . . . . . . . . . . . . : 255.255.255.0
+   ConcessÆo Obtida. . . . . . . . . . . . . . : sexta-feira, 14 de novembro de 2025 18:31:57
+   ConcessÆo Expira. . . . . . . . . . . . . . : sexta-feira, 14 de novembro de 2025 20:31:55
+   Gateway PadrÆo. . . . . . . . . . . . . . . : 192.168.0.1
+   Servidor DHCP . . . . . . . . . . . . . . . : 192.168.0.1
+   IAID de DHCPv6. . . . . . . . . . . . . . . : 64001126
+   DUID de Cliente DHCPv6. . . . . . . . . . . : 00-01-00-01-2F-50-04-83-D0-94-66-B9-6E-BD
+   Servidores DNS. . . . . . . . . . . . . . . : 192.168.0.1
+   NetBIOS em Tcpip. . . . . . . . . . . . . . : Habilitado
+
+Adaptador de Rede sem Fio ConexÆo Local* 1:
+
+   Estado da m¡dia. . . . . . . . . . . . . .  : m¡dia desconectada
+   Sufixo DNS espec¡fico de conexÆo. . . . . . : 
+   Descri‡Æo . . . . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter
+   Endere‡o F¡sico . . . . . . . . . . . . . . : 5C-CD-5B-19-65-A0
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configura‡Æo Autom tica Habilitada. . . . . : Sim
+
+Adaptador de Rede sem Fio ConexÆo Local* 2:
+
+   Estado da m¡dia. . . . . . . . . . . . . .  : m¡dia desconectada
+   Sufixo DNS espec¡fico de conexÆo. . . . . . : 
+   Descri‡Æo . . . . . . . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2
+   Endere‡o F¡sico . . . . . . . . . . . . . . : 5E-CD-5B-19-65-9F
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configura‡Æo Autom tica Habilitada. . . . . : Sim
+
+Adaptador de Rede sem Fio Wi-Fi:
+
+   Estado da m¡dia. . . . . . . . . . . . . .  : m¡dia desconectada
+   Sufixo DNS espec¡fico de conexÆo. . . . . . : 
+   Descri‡Æo . . . . . . . . . . . . . . . . . : Intel(R) Wireless-AC 9560 160MHz
+   Endere‡o F¡sico . . . . . . . . . . . . . . : 5C-CD-5B-19-65-9F
+   DHCP Habilitado . . . . . . . . . . . . . . : Sim
+   Configura‡Æo Autom tica Habilitada. . . . . : Sim
+
+Erro: linha de comando nÆo reconhecida ou incompleta.
+
+USO:
+    ipconfig [/allcompartments] [/? | /all |
+                                 /renew [adapter] | /release [adapter] |
+                                 /renew6 [adapter] | /release6 [adapter] |
+                                 /flushdns | /displaydns | /registerdns |
+                                 /showclassid adapter |
+                                 /setclassid adapter [classid] |
+                                 /showclassid6 adapter |
+                                 /setclassid6 adapter [classid] ]
+
+onde
+    o nome da conexÆo             do adaptador
+                       (caracteres curinga * e ? permitidos, veja os exemplos)
+
+    Op‡äes:
+       /?               Exibir essa mensagem de ajuda
+       /all             Exibir informa‡äes completas da configura‡Æo.
+       /release         Libere o endere‡o IPv4 do adaptador especificado.
+       /release6        Liberar o endere‡o IPv6 para o adaptador especificado.
+       /renew           Renovar o endere‡o IPv4 do adaptador especificado.
+       /renew6          Renovar o endere‡o IPv6 para o adaptador especificado.
+       /flushdns        Limpa o cache do Resolvedor de DNS.
+       /registerdns     Atualiza todas as concessäes de DHCP e registra novamente os nomes de DNS
+       /displaydns      Exibir o conte£do do Cache do Resolvedor de DNS.
+       /showclassid     Exibe todas as IDs da classe DHCP permitidas para o adaptador.
+       /setclassid      Modifica a ID da classe DHCP.
+       /showclassid6    Exibe todas as IDs da classe DHCP IPv6 permitidas para o adaptador.
+       /setclassid6     Modifica a ID da classe DHCP IPv6.
+
+
+O padrÆo ‚ exibir apenas o endere‡o IP, a m scara de sub-rede e o
+gateway padrÆo para cada adaptador ligado ao TCP/IP.
+
+Para Libera‡Æo e Renova‡Æo, se nenhum nome de adaptador for especificado, as concessäes de endere‡o IP
+para todos os adaptadores vinculados ao TCP/IP serÆo liberadas ou renovadas.
+
+Para Setclassid e Setclassid6, se nenhuma ClassId for especificada, a ClassId ser  removida.
+
+Exemplos:
+    > ipconfig                       ... Mostrar informa‡äes
+    > ipconfig /all                  ... Mostrar informa‡äes detalhadas
+    > ipconfig /renew                ... renovar todos os adaptadores
+    > ipconfig /renew EL*            ... renovar qualquer conexÆo que tenha seu
+                                         nome iniciado por EL
+    > ipconfig /release *Con*        ... liberar todas as conexäes correspondentes,
+                                         por exemplo, "ConexÆo Ethernet com Fio 1" ou
+                                             "ConexÆo Ethernet com fio 2"
+    > ipconfig /allcompartments      ... Mostrar informa‡äes sobre todos
+                                         os compartimentos
+    > ipconfig /allcompartments /all ... Mostrar informa‡äes detalhadas sobre todos
+                                         os compartimentos
